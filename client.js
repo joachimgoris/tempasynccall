@@ -33,4 +33,6 @@ function doMoreWork() {
 }
 
 // Wrap in a main call so we can properly await our async calls
-main();
+main().catch((error) => {
+  console.error(error);
+});
